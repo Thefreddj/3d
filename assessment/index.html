@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+ <script type='text/javascript' src='https://www.x3dom.org/x3dom/release/x3dom.js'></script>
+ <script src="scripts/interaction.js"></script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://kit.fontawesome.com/2ddc83290d.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class ="navbar navbar-expand-sm navbar_coca_cola">
+      <div class="logo">
+        <a class="navbar-brand" href="#">
+        <h2>My</h2>
+	<h1>1</h1>
+        <h1>oca</h1>
+        <h2>Cola</h2>
+        <h3>Showcase</h3>
+        <p>Refreshing the world, one story at a time</p>
+        </a>
+        </div>
+        
+      <button Class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span Class ="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class = "nav-item">
+            <a class = "nav-link active" href = "javascript:swap('home')">Home</a>
+          </li>
+          <li class = "nav-item dropdown">
+            <a class = "nav-link dropdown-toggle" href="#" id = "navbardrop" data-toggle="dropdown">Drinks</a>
+            <div class = "dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href = "javascript:swap('can')">Dr pepper</a>
+              <a class="dropdown-item" href = "javascript:swap('bottle')">Fanta</a>
+              <a class="dropdown-item" href = "javascript:swap('cup')">Costa</a>
+            </div>
+          </li>
+          <li class = "nav-item">
+            <a class = "nav-link" href = "javascript:swap('about')">information</a>
+          </li>
+
+        
+        </ul>
+      </div>
+    </nav>
+    <br>
+
+    <!-- page content-->
+    <div class="container-fluid">
+      <div class="container main_contents">
+        <!-- home page content-->
+        <div id="home">
+          <div class = "row">
+            <div class="col-sm-12">
+              <div id="main_3d_image">
+              <div id="main_text" class="col-xs12 col-sm-4">
+                  <h2>Coca Cola Great Britain</h2>
+                  <h3>Founded by Dr John S Pemberton</h3>
+                  <p>The Coca Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content grids -->
+          <div class="row" id = "home">
+            <!-- dr pepper -->
+            <div class = "col-sm-4">
+              <div class = "card">
+                <a href="#">
+                  <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/dr_pepper.jpg" alt="Coca Cola">
+                </a>
+                <div class="card-body">
+                 <h3 class="card-title">Dr Pepper</h3>
+                  <p class="card-text">put dr pepper text here</p>
+                  <a href="#" class="btn btn-primary">Find out more ...</a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Fanta -->
+            <div class = "col-sm-4">
+              <div class = "card">
+                <a href="#">
+                  <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/fanta.jpg" alt="Coca Cola">
+                </a>
+                <div class="card-body">
+                  <h3 class="card-title">Fanta</h3>
+                  <p class="card-text">put fanta text here</p>
+                  <a href="#" class="btn btn-primary">Find out more ...</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Costa Coffee -->
+            <div class = "col-sm-4">
+              <div class = "card">
+                <a href="#">
+                  <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/Costa.jpg" alt="Coca Cola">
+                </a>
+                <div class="card-body">
+                  <h3 class="card-title">Costa Coffee</h3>
+                  <p class="card-text">put costa text here</p>
+                  <a href="#" class="btn btn-primary">Find out more ...</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of home content-->
+
+      <!-- drink content-->
+      <div id = "dynamicContent">
+<div class = "row">
+        <div id = 'gallery' class="col-sm-3" style= "display:none">
+          <div class="card-header gallery-header">
+            Gallery
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">3D Image Gallery</h4>
+            <div class="gallery"></div>
+            <p class="card-text">These 3D images were made and rendered in blender</p>
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/gallery_images/bottleFromFront.png" alt="Coca Cola">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/gallery_images/bottleFromTop.png" alt="Coca Cola">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/gallery_images/canFromFront.png" alt="Coca Cola">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/gallery_images/canFromTop.png" alt="Coca Cola">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/gallery_images/canFromBack.png" alt="Coca Cola">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/gallery_images/cupFromFront.png" alt="Coca Cola">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/gallery_images/cupFromBottom.png" alt="Coca Cola">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/gallery_images/cupFromToppng.png" alt="Coca Cola">
+        </div>
+      </div>
+        
+          <div class="col-sm-9">
+            <!-- can content-->
+            <div id = "can" style = "display:none">
+              <div>
+                <div class= "row">
+                  <div class = "card">
+                    <div class = "card-header">
+                      Camera Controls
+                    </div>
+                    <div class=" card-body">
+<a href="#" class="btn btn-success btn-responsive" onclick="document.getElementById('CA_Camera').setAttribute('bind', 'true');">Front</a>
+                      <a href="#" class="btn btn-primary btn-responsive" onclick="	document.getElementById('CA_Camera_001').setAttribute('bind', 'true');">Back</a>
+                      <a href="#" class="btn btn-secondary btn-responsive" onclick="	document.getElementById('CA__Camera.002').setAttribute('bind', 'true');">Top</a>
+                      <a href="#" class="btn btn-secondary btn-responsive" onclick="	document.getElementById('CA__Camera.003').setAttribute('bind', 'true');">Bottom</a>                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <x3d width="400" height="250">
+                    <scene>
+                        <inline url="assets/x3d/can.x3d"> </inline>
+                    </scene>
+                </x3d>
+                </div>
+              </div>
+            </div>
+            <!-- bottle content-->
+            <div id = "bottle" style="display:none">
+              <div>
+                <div class= "row">
+                  <div class = "card">
+                    <div class = "card-header">
+                      Camera Controls
+                    </div>
+                    <div class=" card-body">
+                      <button type="button">Front camera</button>
+                      <button type="button">Side camera</button>
+                      <button type="button">Top camera</button>
+                      <button type="button">Bottom camera</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <x3d width="400" height="250">
+                    <scene>
+                        <inline nurl="assets/x3d/bottle.x3d"> </inline>
+                    </scene>
+                </x3d>
+          
+                </div>
+              </div>
+            </div>
+              <!-- cup content-->
+            <div id = "cup" style = "display:none">
+              <div>
+                <div class= "row">
+                  <div class = "card">
+                    <div class = "card-header">
+                      Camera Controls
+                    </div>
+                    <div class=" card-body">
+                      <button type="button">Front camera</button>
+                      <button type="button">Side camera</button>
+                      <button type="button">Top camera</button>
+                      <button type="button">Bottom camera</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <x3d width="400" height="250">
+                    <scene>
+                        <inline url="assets/x3d/cup.x3d"> </inline>
+                    </scene>
+                </x3d>
+                </div>
+              </div>
+            </div>
+
+            <div id = "about" style = "display:none">
+              <div class= "row">
+                extra Information:<br>
+                blender was used instead of 3ds max<br>
+                github linked in footer with all code + blender files<br>
+                sources:<br>
+                https://www.adamsfastfoods.com/shop/drinks/fizzy-drinks/bottles/gb-fanta-fruit-twist-bottle-12x500ml/     - - fanta lid<br>
+                https://www.pinterest.com/pin/309270699392577466/      - - fanta label<br>
+                https://www.turbosquid.com/FullPreview/Index.cfm/ID/824440 - - dr pepper label<br>
+                https://en.m.wikipedia.org/wiki/File:Costa_Coffee_Logo_white_on_red.png - - costa logo<br>
+                https://store.approvedfood.co.uk/hot_drinks/costa_coffee_400ml_cup_lids_100_pack_286g-36495-p?pid=36495 - - costa lid
+
+              </div>
+            </div>
+
+          
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+    </div>
+  </body>
+  <!-- footer-->
+  <br>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <div class="navbar-text float-left copyright">
+        <p> <span class="align-baseline"></span>&copy 2021 Mobile Web 3D Applications </span></p>
+      </div>
+      <div class="navbar-text float-right social">
+        <a href="#"><i class = "fab fa-github-square fa-2x"></i></a>
+      </div> 
+    </div>
+  </nav>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="scripts/gallery_generator.js"></script>
+      <script src="scripts/getJsonData.js"></script>
+      <script src="scripts/swap_restyle.js"></script>
+      <script src="scripts/interaction.js"></script>
+</html>
